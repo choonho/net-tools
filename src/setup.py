@@ -15,7 +15,7 @@ requirements = [
 
 setup(
     name = "net-tools",
-    version = "0.1.1",
+    version = "0.1.2",
     author = "Choonho Son",
     author_email = "choonho.son@gmail.com",
     description = ("Network measurement tool set for cloud provisioning"),

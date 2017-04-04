@@ -160,7 +160,7 @@ Check
                     self.vpcs[vpcid] = V
                 else:
                     logger.warn("AWS VPC(%s) already exist" % vpcid)
-            output.append(vpcid)
+            	output.append(vpcid)
         except:
             traceback.print_exc()
         return output
