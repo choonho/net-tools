@@ -15,7 +15,7 @@ requirements = [
 
 setup(
     name = "net-tools",
-    version = "0.0.1",
+    version = "0.1.1",
     author = "Choonho Son",
     author_email = "choonho.son@gmail.com",
     description = ("Network measurement tool set for cloud provisioning"),
@@ -23,7 +23,7 @@ setup(
     keywords = "cloud network measurement latency discovery",
     url = "https://github.com/choonho/net-tools",
     packages=['nettools','nettools.provider', 'nettools.sensor', 'nettools.utils'],
-    long_description=read('nettools/README.md'),
+    long_description=read('README.md'),
     classifiers=[
         "Topic :: Utilities"
     ],
