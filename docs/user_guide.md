@@ -49,7 +49,7 @@ net-tools>
 ## Example: start with no credentials
 
 ~~~bash
-[root@flywheel ~]# net-tools
+[root@server]# net-tools
 WARNING There is no credentials
 INFO AWS Credential does not exist
 Add AWS Credential (y/n)?y
