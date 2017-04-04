@@ -15,7 +15,7 @@ For AWS,
 
 update your ~/.aws/credentials
 
-~~~text
+~~~
 [default]
 aws_access_key_id=<your aws access key id>
 aws_secret_access_key=<your aws secret access key>
@@ -32,11 +32,10 @@ Otherwise, when you start net-tools, it ask your keys.
 # Discover AWS Resources
 
 net-tools discovers AWS VPCs and Subnets
+
+~~~bash
 Command: discover aws <aws region name>
 - <aws region name> is optional, if you want to discover specified region.
- 
-~~~bash
-discover aws
 ~~~
 
 ## Example: Discover all aws regions
@@ -101,12 +100,12 @@ net-tools>
 # List VPCs
 
 After discovering the resources, you can search VPCs.
-Command: list vpc <aws region name>
-- <aws region name> is optional, if you want to list specified region.
 
 ~~~bash
-list vpc
+Command: list vpc <aws region name>
+- <aws region name> is optional, if you want to list specified region.
 ~~~
+
 
 ## Example: list all regions, after "discover aws"
 
@@ -176,9 +175,12 @@ net-tools>
 
 "Routing information check" is calculating two IP prefixes which are overlap or not.
 
+~~~bash
 Command: routable <vpc-id|subnet-id|prefix> <vpc-id|subnet-id|prefix>
 - The arguments can be VPC or subnet ID.
 - IP prefix is also possible.
+~~~
+
 
 ## Example: compare two VPCs
 
