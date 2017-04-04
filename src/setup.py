@@ -9,7 +9,7 @@ from glob import glob
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-requrements = [
+requirements = [
     'boto3',
     ]
 
@@ -23,12 +23,12 @@ setup(
     keywords = "cloud network measurement latency discovery",
     url = "https://github.com/choonho/net-tools",
     packages=['nettools','nettools.provider', 'nettools.sensor', 'nettools.utils'],
-    long_description=read('README.md'),
+    long_description=read('nettools/README.md'),
     classifiers=[
         "Topic :: Utilities"
     ],
     zip_safe=True,
-    install_requires= requrements,
+    install_requires= requirements,
     entry_points = {
         'console_scripts': [
             'net-tools = nettools.cli:main',
