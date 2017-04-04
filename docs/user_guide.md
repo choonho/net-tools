@@ -29,6 +29,43 @@ Otherwise, when you start net-tools, it ask your keys.
 # net-tools
 ~~~
 
+## Example: start with credentials
+
+~~~bash
+[root@server]# net-tools 
+INFO Found User's AWS credentials file at /root/.aws/credentials
+INFO Loading /root/.aws/credentials
+INFO Starting new HTTPS connection (1): ec2.us-east-1.amazonaws.com
+
+###################################################################
+Welcome to the net-tools shell.
+Discover resources first, (for AWS, type "discover aws")
+Type help or ?.
+###################################################################
+
+net-tools> 
+~~~
+
+## Example: start with no credentials
+
+~~~bash
+[root@flywheel ~]# net-tools
+WARNING There is no credentials
+INFO AWS Credential does not exist
+Add AWS Credential (y/n)?y
+AWS Access Key ID: AKIAJZE6N5CXXXXXXXXX
+AWS Secret Access Key: 7jeZ7/EarWq9lxhXXXXXXXXXXXXXXXXXXX3EpH/u
+INFO Starting new HTTPS connection (1): ec2.us-east-1.amazonaws.com
+
+###################################################################
+Welcome to the net-tools shell.
+Discover resources first, (for AWS, type "discover aws")
+Type help or ?.
+###################################################################
+
+net-tools> 
+~~~
+
 # Discover AWS Resources
 
 net-tools discovers AWS VPCs and Subnets
